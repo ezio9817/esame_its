@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenotazione</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form action="seconda_pagina.html" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" pattern="[a-zA-ZÀ-ÿ\s]+" title="Inserisci solo caratteri alfabetici" maxlength="40" required>
+    
+    <label for="cognome">Cognome:</label>
+    <input type="text" id="cognome" name="cognome" pattern="[a-zA-ZÀ-ÿ\s]+" title="Inserisci solo caratteri alfabetici" maxlength="40" required>
+    
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="mail" maxlength="40" required>
+    
+    <label for="telefono">Numero di telefono:</label>
+    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    
+    <label for="note">Note della prenotazione (max 200 caratteri):</label>
+    <textarea id="note" name="note" maxlength="200"></textarea>
+    
+    <label for="coperti">Numero di coperti:</label>
+    <input type="number" id="coperti" name="coperti" min="1" required>
+    
+    <label for="ristorante">Ristorante di riferimento:</label>
+    <input type="text" id="ristorante" name="ristorante" maxlength="40" required>
+    
+    <label for="date">Range di date di interesse:</label>
+    <input type="text" id="date" name="date" required>
+    
+    <input type="submit" value="Invia">
+</form>
+
+
+
+</body>
+</html>
